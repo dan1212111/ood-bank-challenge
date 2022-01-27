@@ -5,6 +5,8 @@
     "main": "index.js",
     "license": "ISC",
     "devDependencies": {
-      "jasmine": "^3.10.0"
+        "eslint": "^8.7.0",
+        "eslint-plugin-vue": "^8.4.0",
+        "jasmine": "^3.10.0"
     }
-  }
+}

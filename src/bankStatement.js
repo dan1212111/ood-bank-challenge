@@ -1,13 +1,12 @@
-const BankAccount = require("../src/BankAccount.js")
-const Deposit = require("../src/Deposit.js")
-const Withdrawal = require("../src/Withdrawal.js")
 
 class BankStatement {
 
+    constructor(bankAccount) {
+        this.bankAccount = bankAccount
+    }
+
     printStatement (){
-    `date    || credit  || debit  || balance
-    ${this.widthdrawStatement}
-    ${this.totalDeposited}`
+    return this.bankAccount
 }
 }
 

@@ -1,18 +1,26 @@
-const BankStatement = require("../src/bankStatement.js")
+const BankAccount = require("../src/BankAccount.js");
+const BankStatement = require("../src/bankStatement.js");
 
-describe("BankStatement", () => {
-  let bankStatement;
+describe("BankAcoount", () => {
+  let bankAccount;
+  let bankStatement
 
   beforeEach(() => {
-    bankStatement = new BankStatement();
+    bankAccount = new BankAccount();
+    bankStatement = new BankStatement(bankAccount)
   });
 
-  it("deposit into BankAccount", () => {
+  it("print bank statement", () => {
     // set up
-    // const expected = new Deposit(150, "12/09/2024", "12am")
+
+
 
     // execute
-    bankStatement.printStatement()
+    bankAccount.depositMoney(150)
+    bankAccount.withdrawMoney(150)
+    bankAccount.lookUpTotalDeposit()
+    bankAccount.lookUpTotalWithdrawn()
+    const result = bankStatement.printStatement()
 
     // verify
     expect(result).toEqual(expected);
