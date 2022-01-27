@@ -1,0 +1,16 @@
+// Create Class Bank Account 
+- Funstion return total Balance
+- Function to deposit money + date/time
+- Function to withdraw money + date/time 
+- function print statement 
+
+// Create withdraw Class 
+- funtion details withdraw money + date/time
+- function shows total money withdrawn + date/time 
+
+// Create deposit money 
+- function details add money + date/time 
+- function shows total money added + date/time 
+
+//Create Bank Statement Class
+- prints a bank statement 
